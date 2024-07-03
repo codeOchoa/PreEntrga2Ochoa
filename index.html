@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head lang="es-MX">
+    <meta charset="UTF-8">
+    <meta name="author" content="Alejandra">
+    <meta name="copyright" content="MALEC VELAS">
+    <meta name="description" content="tienda artesanal de seramica y velas de soja">
+    <meta name="keywords" content="ceramica, velas, suvenirs, bouls, tazas">
+    <meta name="robots" content="index">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="resources/icons/Logo.png">
+    <link rel="stylesheet" type="normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Malec Velas</title>
+</head>
+<body>
+    <div class="background"></div>
+    <header>
+        <div class="nav">
+            <a href="index.html"><h1>Malec<br>Velas<h1></a>
+            <input class="buscar" id="buscar__id" type="search" placeholder="Buscar...">
+            <img id="cancel" src="resources/icons/xmark-solid.svg" alt="Cancelar">
+            <div class="list">
+                <button><img id="search" src="resources/icons/magnifying-glass-solid.svg" alt="Buscar"></button>
+                <a href="cart.html"><button><img id="cart" src="resources/icons/cart-shopping-solid.svg" alt="Carrito"></button></a>
+            </div>
+        </div> 
+    </header>
+    <article>
+        <div class="articulos">
+            <img id="expo" src="resources/images/art9.jpeg" alt="Tazon">
+            <h3><b>Tazon</b></h3>
+            <p>Descubre nuestro tazón de diseño robusto y elegante. Fabricado con materiales de la más alta calidad, este tazón no solo es duradero, sino que también agrega un toque de sofisticación a tu mesa. Su alto valor refleja su excepcional artesanía y diseño atemporal. Perfecto para aquellos que aprecian la finura en cada detalle. </p>
+            <h4><b>$3.199</b></h4>
+            <button class="less" onclick="decrementar()"><img id="less__img" src="resources/icons/caret-left-solid.svg" alt="Quitar"></button> 
+            <input type="number" class="amount" placeholder="0" min="0" value="0" max="99">
+            <button class="add" onclick="incrementar()"><img id="add__img" src="resources/icons/caret-right-solid.svg" alt="Añadir"></button>
+        </div>
+        <div class="articulos">
+            <img id="expo" src="resources/images/art2.png" alt="Tazon">
+            <h3><b>Taza</b></h3>
+            <p>Experimenta la elegancia con nuestro tazón de diseño premium. Hecho con materiales de primera calidad, este tazón combina durabilidad con un estilo sofisticado. Su alto valor es testimonio de su excelente artesanía y diseño clásico. Ideal para los amantes del lujo y la calidad en cada detalle</p>
+            <h4><b>$2.999</b></h4>
+            <button class="less" onclick="decrementar()"><img id="less__img" src="resources/icons/caret-left-solid.svg" alt="Quitar"></button> 
+            <input type="number" class="amount" placeholder="0" min="0" value="0" max="99">
+            <button class="add" onclick="incrementar()"><img id="add__img" src="resources/icons/caret-right-solid.svg" alt="Añadir"></button>
+        </div>
+        <div class="articulos">
+            <img id="expo" src="resources/images/art7.jfif" alt="Velas">
+            <h3><b>Velas</b></h3>
+            <p>Ilumina tu espacio con nuestras velas artesanales en recipientes de cerámica. Hechas a mano con amor, estas velas no solo desprenden una luz cálida y acogedora, sino que también añaden un toque de elegancia rústica a cualquier habitación. Los recipientes de cerámica, bellamente diseñados, pueden ser reutilizados una vez que la vela se haya consumido, ofreciendo un valor duradero. Perfectas para los amantes de los detalles únicos y la calidad artesanal.</p>
+            <h4><b>$3.999</b></h4>
+            <button class="less" onclick="decrementar()"><img id="less__img" src="resources/icons/caret-left-solid.svg" alt="Quitar"></button> 
+            <input type="number" class="amount" placeholder="0" min="0" value="0" max="99">
+            <button class="add" onclick="incrementar()"><img id="add__img" src="resources/icons/caret-right-solid.svg" alt="Añadir"></button>
+        </div>
+        <div class="articulos">
+            <img id="expo" src="resources/images/art6.jfif" alt="Tazas">
+            <h3><b>Juego de Té</b></h3>
+            <p>Descubre nuestra taza de diseño grueso, una pieza de alta calidad y valor. Su robustez y acabado superior la convierten en un objeto de deseo para los amantes del café. ¡Un lujo diario al alcance de tu mano!</p>
+            <h4><b>$7.499</b></h4>
+            <button class="less" onclick="decrementar()"><img id="less__img" src="resources/icons/caret-left-solid.svg" alt="Quitar"></button> 
+            <input type="number" class="amount" placeholder="0" min="0" value="0" max="99">
+            <button class="add" onclick="incrementar()"><img id="add__img" src="resources/icons/caret-right-solid.svg" alt="Añadir"></button>
+        </div>
+        <div class="articulos">
+            <img id="expo" src="resources/images/art3.png" alt="Jarritos">
+            <h3><b>Aceitero + Salero + Vinagrero</b></h3>
+            <p>Presentamos nuestro exclusivo conjunto de jarritos, cada uno con un diseño grueso y de alta calidad. Este conjunto, de gran valor, es perfecto para compartir momentos especiales. ¡Añade un toque de elegancia a tu rutina diaria con estos jarritos excepcionales!</p>
+            <h4><b>$8.499</b></h4>
+            <button class="less" onclick="decrementar()"><img id="less__img" src="resources/icons/caret-left-solid.svg" alt="Quitar"></button> 
+            <input type="number" class="amount" placeholder="0" min="0" value="0" max="99">
+            <button class="add" onclick="incrementar()"><img id="add__img" src="resources/icons/caret-right-solid.svg" alt="Añadir"></button>
+        </div>
+    </article>
+    <aside>
+        <div>
+            NAVEGACIÓN<br>
+            Inicio<br>
+            Productos<br>
+            Contacto<br>
+            Pregunas Frecuentes<br>
+            Cómo Comprar<br>
+            Política de Devolución<br>
+            Método de envío<br>
+            Términos y condiciones
+        </div>
+        <div>
+            MEDIOS DE PAGO<br>
+            * Mostrar imágenes de tarjetas, bancos y agencias de cobro *
+        </div>
+        <div>
+            FORMAS DE ENVÍO<br>
+            * Mostrar imágenes de Oca y Mercado Envíos *
+        </div>
+        <div>
+            CONTACTANOS<br>
+            + 54 9 223 575-8535<br>
+            alejandracigrand@gmail.com
+        </div>
+        <div>
+            REDES SOCIALES<br>
+            * Mostrar imagenes que redireccionen a una página de su respectiva red social *
+        </div>
+        <div>
+            NEWLETTER<br>
+            * Crear un campo de entrada para tomar registro de un mail de publicidad *
+        </div>
+    </aside>
+    <footer>
+        <p>
+            COPYRIGHT MALEC VELAS - 2023. TODOS LOS DERECHOS RESERVADOS. DEFENSA DE LAS Y LOS CONSUMIDORES. PARA RECLAMOS 
+            <a class="pie" href="test.html">INGRESE AQUÍ</a><br>
+            <b>REFERENCIA:</b> <a href="https://kissaccesorios.empretienda.com.ar/?fbclid=PAAaZ7WywZ4peFk91LVKtBcLqWedgL4dBvmgOU6R2FRMIPGWTxCJCAENcQyd4" target="_BLANK"><b>Kiss Acesorios</b></a>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="src\img\chess-knight-solid.svg" alt="Título de la tienda">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar...">
+                <button><svg xmlns="http://www.w3.org/2000/svg"><img src="src\img\magnifying-glass-minus-solid.svg" alt="Buscar"></svg></button>
+            </div>
+            <div class="options">
+                <a href="#">Inicio</a>
+                <a href="#">Carrito</a>
+                <a href="#">Más Opciones</a>
+            </div>
+        </div>
+    </nav>
+    <button onclick="window.location.href='about.html'">
+        <img src="src/img/chess-knight-solid.svg" alt="Icono de caballo de ajedrez">
+    </button>
+    <main>
+        <div class="grid-container">
+            <!-- Aquí se generará dinámicamente el contenido de los productos -->
+        </div>
+    </main>
