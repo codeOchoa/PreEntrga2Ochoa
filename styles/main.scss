@@ -1,0 +1,91 @@
+@import "/assets/css/reset.css";
+@import "/assets/css/normalize.css";
+@import "/node_modules/bootstrap-icons/font/bootstrap-icons.min.css";
+@import "/node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@font-face {
+    font-family: "Josefin Sans";
+    src: url("/assets/fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
+}
+
+/* Variables para el modo claro */
+// :root {
+    // --bs-body-bg: #ffffff;
+    /* Fondo del cuerpo */
+    // --bs-body-color: #212529;
+    /* Color del texto del cuerpo */
+    // --bs-primary: #0d6efd;
+    /* Color primario */
+    // --bs-secondary: #6c757d;
+    /* Color secundario */
+    // --bs-success: #198754;
+    /* Color de éxito */
+    // --bs-info: #0dcaf0;
+    /* Color de información */
+    // --bs-warning: #ffc107;
+    /* Color de advertencia */
+    // --bs-danger: #dc3545;
+    /* Color de peligro */
+    // --bs-light: #f8f9fa;
+    /* Color claro */
+    // --bs-dark: #343a40;
+    /* Color oscuro */
+// }
+
+/* Variables para el modo oscuro */
+// @media (prefers-color-scheme: dark) {
+    // :root {
+        // --bs-body-bg: #212529;
+        /* Fondo del cuerpo */
+        // --bs-body-color: #f8f9fa;
+        /* Color del texto del cuerpo */
+        // --bs-primary: #0d6efd;
+        /* Color primario */
+        // --bs-secondary: #adb5bd;
+        /* Color secundario */
+        // --bs-success: #198754;
+        /* Color de éxito */
+        // --bs-info: #0dcaf0;
+        /* Color de información */
+        // --bs-warning: #ffc107;
+        /* Color de advertencia */
+        // --bs-danger: #dc3545;
+        /* Color de peligro */
+        // --bs-light: #e9ecef;
+        /* Color claro */
+        // --bs-dark: #212529;
+        /* Color oscuro */
+    // }
+// }
+
+body {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    font-family: Josefin Sans, sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+#logoMalec {
+    height: auto;
+    width: 64px;
+}
+
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    transition: top 0.3s;
+}
+
+#container__item    {
+    background: #05516050;
+}
+
+.h5 {
+    text-decoration: none;
+}

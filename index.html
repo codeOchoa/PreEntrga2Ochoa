@@ -1,206 +1,232 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="dark">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="profile" content="https://github.com/codeOchoa">
-  <meta name="copyright" content="codeOchoa">
-  <meta name="description" content="Tienda artesanal de cerámica y velas de soja.">
-  <meta name="robots" content="index, follow">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="icon" href="/assets/images/logo.png">
-  <title>Malec Velas</title>
+    <meta charset="UTF-8">
+    <meta name="profile" content="https://github.com/codeOchoa">
+    <meta name="copyright" content="codeOchoa">
+    <meta name="description" content="Tienda artesanal de cerámica y velas de soja.">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="icon" href="/assets/images/logo.png">
+    <title>Malec</title>
 </head>
 
 <body>
-  <!-- Nav-header -->
-  <header>
-    <nav class="navbar bg-body-tertiary fixed-top">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#"><img id="logoMalec" src="/assets/images/logo.png" alt="Logo"></a>
-        <button class="navbar-toggler" type="button">
-          <i class="bi bi-search"></i>
-        </button>
-        <!-- offcanvas -->
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <!-- Nav-header -->
+    <header>
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Malec</a>
+                <button class="navbar-toggler" type="button">
+                    <i class="bi bi-search"></i>
+                </button>
+                <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <!-- offcanvas -->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Malec</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Productos
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">¿Quienes Somos?</a>
+                                </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Nav-bar -->
+        <nav id="nav-bar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Selecciona País</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Carrito</a>
+                    </li>
                 </ul>
-              </li>
-            </ul>
-            <form class="d-flex mt-3" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!-- Nav-bar -->
-  <nav id="nav-bar" class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Secondary Link 1</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Secondary Link 2</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  </header>
-  <main>
-    <article>
-      <div class="articulos">
-        <img id="expo" src="resources/images/art9.jpeg" alt="Tazon">
-        <h3><b>Tazon</b></h3>
-        <p>Descubre nuestro tazón de diseño robusto y elegante. Fabricado con materiales de la más alta calidad, este
-          tazón no solo es duradero, sino que también agrega un toque de sofisticación a tu mesa. Su alto valor refleja
-          su excepcional artesanía y diseño atemporal. Perfecto para aquellos que aprecian la finura en cada detalle.
-        </p>
-        <h4><b>$3.199</b></h4>
-        <button class="less" onclick="decrementar()"><img id="less__img" src="resources/icons/caret-left-solid.svg"
-            alt="Quitar"></button>
-        <input type="number" class="amount" placeholder="0" min="0" value="0" max="99">
-        <button class="add" onclick="incrementar()"><img id="add__img" src="resources/icons/caret-right-solid.svg"
-            alt="Añadir"></button>
-      </div>
-      <div class="articulos">
-        <img id="expo" src="resources/images/art2.png" alt="Tazon">
-        <h3><b>Taza</b></h3>
-        <p>Experimenta la elegancia con nuestro tazón de diseño premium. Hecho con materiales de primera calidad, este
-          tazón combina durabilidad con un estilo sofisticado. Su alto valor es testimonio de su excelente artesanía y
-          diseño clásico. Ideal para los amantes del lujo y la calidad en cada detalle</p>
-        <h4><b>$2.999</b></h4>
-        <button class="less" onclick="decrementar()"><img id="less__img" src="resources/icons/caret-left-solid.svg"
-            alt="Quitar"></button>
-        <input type="number" class="amount" placeholder="0" min="0" value="0" max="99">
-        <button class="add" onclick="incrementar()"><img id="add__img" src="resources/icons/caret-right-solid.svg"
-            alt="Añadir"></button>
-      </div>
-      <div class="articulos">
-        <img id="expo" src="resources/images/art7.jfif" alt="Velas">
-        <h3><b>Velas</b></h3>
-        <p>Ilumina tu espacio con nuestras velas artesanales en recipientes de cerámica. Hechas a mano con amor, estas
-          velas no solo desprenden una luz cálida y acogedora, sino que también añaden un toque de elegancia rústica a
-          cualquier habitación. Los recipientes de cerámica, bellamente diseñados, pueden ser reutilizados una vez que
-          la vela se haya consumido, ofreciendo un valor duradero. Perfectas para los amantes de los detalles únicos y
-          la calidad artesanal.</p>
-        <h4><b>$3.999</b></h4>
-        <button class="less" onclick="decrementar()"><img id="less__img" src="resources/icons/caret-left-solid.svg"
-            alt="Quitar"></button>
-        <input type="number" class="amount" placeholder="0" min="0" value="0" max="99">
-        <button class="add" onclick="incrementar()"><img id="add__img" src="resources/icons/caret-right-solid.svg"
-            alt="Añadir"></button>
-      </div>
-      <div class="articulos">
-        <img id="expo" src="resources/images/art6.jfif" alt="Tazas">
-        <h3><b>Juego de Té</b></h3>
-        <p>Descubre nuestra taza de diseño grueso, una pieza de alta calidad y valor. Su robustez y acabado superior la
-          convierten en un objeto de deseo para los amantes del café. ¡Un lujo diario al alcance de tu mano!</p>
-        <h4><b>$7.499</b></h4>
-        <button class="less" onclick="decrementar()"><img id="less__img" src="resources/icons/caret-left-solid.svg"
-            alt="Quitar"></button>
-        <input type="number" class="amount" placeholder="0" min="0" value="0" max="99">
-        <button class="add" onclick="incrementar()"><img id="add__img" src="resources/icons/caret-right-solid.svg"
-            alt="Añadir"></button>
-      </div>
-      <div class="articulos">
-        <img id="expo" src="resources/images/art3.png" alt="Jarritos">
-        <h3><b>Aceitero + Salero + Vinagrero</b></h3>
-        <p>Presentamos nuestro exclusivo conjunto de jarritos, cada uno con un diseño grueso y de alta calidad. Este
-          conjunto, de gran valor, es perfecto para compartir momentos especiales. ¡Añade un toque de elegancia a tu
-          rutina diaria con estos jarritos excepcionales!</p>
-        <h4><b>$8.499</b></h4>
-        <button class="less" onclick="decrementar()"><img id="less__img" src="resources/icons/caret-left-solid.svg"
-            alt="Quitar"></button>
-        <input type="number" class="amount" placeholder="0" min="0" value="0" max="99">
-        <button class="add" onclick="incrementar()"><img id="add__img" src="resources/icons/caret-right-solid.svg"
-            alt="Añadir"></button>
-      </div>
-    </article>
-    <section></section>
-  </main>
-  <aside>
-    <div>
-      NAVEGACIÓN<br>
-      Inicio<br>
-      Productos<br>
-      Contacto<br>
-      Pregunas Frecuentes<br>
-      Cómo Comprar<br>
-      Política de Devolución<br>
-      Método de envío<br>
-      Términos y condiciones
-    </div>
-    <div>
-      MEDIOS DE PAGO<br>
-      * Mostrar imágenes de tarjetas, bancos y agencias de cobro *
-    </div>
-    <div>
-      FORMAS DE ENVÍO<br>
-      * Mostrar imágenes de Oca y Mercado Envíos *
-    </div>
-    <div>
-      CONTACTANOS<br>
-      + 54 9 223 575-8535<br>
-      alejandracigrand@gmail.com
-    </div>
-    <div>
-      REDES SOCIALES<br>
-      * Mostrar imagenes que redireccionen a una página de su respectiva red social *
-    </div>
-    <div>
-      NEWLETTER<br>
-      * Crear un campo de entrada para tomar registro de un mail de publicidad *
-    </div>
-  </aside>
-  <footer>
-    <!-- <div id="footer"></div>
-        <script>
-            fetch("/includes/footer.html")
-                .then(response => response.text())
-                .then(data => document.getElementById("footer").innerHTML = data);
-        </script> -->
-    <p>
-      COPYRIGHT MALEC VELAS - 2023. TODOS LOS DERECHOS RESERVADOS. DEFENSA DE LAS Y LOS CONSUMIDORES. PARA RECLAMOS
-      <a class="pie" href="test.html">INGRESE AQUÍ</a><br>
-      <b>REFERENCIA:</b> <a
-        href="https://kissaccesorios.empretienda.com.ar/?fbclid=PAAaZ7WywZ4peFk91LVKtBcLqWedgL4dBvmgOU6R2FRMIPGWTxCJCAENcQyd4"
-        target="_BLANK"><b>Kiss Acesorios</b></a>
-    </p>
-  </footer>
-  <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <!-- Carousel -->
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/assets/images/image01.jpg" class="d-block w-100" alt="Sample">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/images/image02.jpg" class="d-block w-100" alt="Sample">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/images/image03.jpg" class="d-block w-100" alt="Sample">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/images/image04.jpg" class="d-block w-100" alt="Sample">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- End-carousel -->
+            <div class="container text-center">
+                <div class="row p-2">
+                    <div class="col p-0 m-2 text-light rounded" id="container__item">
+                        <a href="/modules/product/taza-cafe-250cc-c-tabla-de-madera.html" target="_self"><img
+                                class="img-fluid rounded-top" src="/assets/images/table01tn.jpg"
+                                alt="Taza Cafe 250cc c/Tabla de Madera"></a>
+                        <div class="container-fluid">
+                            <a href="/modules/product/taza-cafe-250cc-c-tabla-de-madera.html"
+                                title="Taza Cafe 250cc c/Tabla de Madera" class="h5"
+                                aria-label="Taza Cafe 250cc c/Tabla de Madera"
+                                data-store="product-item-name-208355257">Taza Cafe 250cc c/Tabla de Madera</a>
+                            <span>$8.099</span>
+                            <div class="">
+                                <a class="btn btn-primary full-width text-center" data-toggle="modal"
+                                    data-target="#quickshop-modal" data-modal-url="modal-fullscreen-quickshop"
+                                    title="Compra rápida de Taza Cafe 250cc c/Tabla de Madera"
+                                    aria-label="Compra rápida de Taza Cafe 250cc c/Tabla de Madera">Agregar al
+                                    carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="/modules/product/taza-cafe-325cc-diseño.html" target="_self"><img class="img-fluid"
+                                src="/assets/images/forest01tn.jpg" alt="Taza Cafe 325cc Diseño"></a>
+                        <div class="" container-fluid>
+                            <a href="/modules/product/taza-cafe-325cc-diseño.html" title="Taza Cafe 325cc Diseño"
+                                class="h5" aria-label="Taza Cafe 325cc Diseño"
+                                data-store="product-item-name-208355257">Taza Cafe 325cc Diseño</a>
+                            <span>$7.999</span>
+                            <div class="">
+                                <a class="js-quickshop-modal-open js-fullscreen-modal-open btn btn-primary full-width font-small-xs"
+                                    data-toggle="modal" data-target="#quickshop-modal"
+                                    data-modal-url="modal-fullscreen-quickshop"
+                                    title="Compra rápida de Taza Cafe 325cc Diseño"
+                                    aria-label="Compra rápida de Taza Cafe 325cc Diseño">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="/modules/product/pocillo-cafe-expreso-porcelana-gastronomica.html" target="_self"><img
+                                class="img-fluid" src="/assets/images/flower01tn.jpg"
+                                alt="Pocillo Café Expreso Porcelana Gastronómica"></a>
+                        <div class="" container-fluid>
+                            <a href="/modules/product/pocillo-cafe-expreso-porcelana-gastronomica.html"
+                                title="Pocillo Café Expreso Porcelana Gastronómica" class="h5"
+                                aria-label="Pocillo Café Expreso Porcelana Gastronómica"
+                                data-store="product-item-name-208355257">Pocillo Café Expreso Porcelana Gastronómica</a>
+                            <span>$1.999</span>
+                            <div class="">
+                                <a class="js-quickshop-modal-open js-fullscreen-modal-open btn btn-primary full-width font-small-xs"
+                                    data-toggle="modal" data-target="#quickshop-modal"
+                                    data-modal-url="modal-fullscreen-quickshop"
+                                    title="Compra rápida de Pocillo Café Expreso Porcelana Gastronómica"
+                                    aria-label="Compra rápida de Pocillo Café Expreso Porcelana Gastronómica">Agregar al
+                                    carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="/modules/product/taza-cafe-290cc-c-plato-arte-latte.html" target="_self"><img
+                                class="img-fluid" src="/assets/images/coffee05tn.jpg"
+                                alt="Taza Cafe 290cc c/Plato Arte Latte"></a>
+                        <div class="" container-fluid>
+                            <a href="/modules/product/taza-cafe-290cc-c-plato-arte-latte.html"
+                                title="Taza Cafe 290cc c/Plato Arte Latte" class="h5"
+                                aria-label="Taza Cafe 290cc c/Plato Arte Latte"
+                                data-store="product-item-name-208355257">Taza Cafe 290cc c/Plato Arte Latte</a>
+                            <span>$10.899</span>
+                            <div class="">
+                                <a class="js-quickshop-modal-open js-fullscreen-modal-open btn btn-primary full-width font-small-xs"
+                                    data-toggle="modal" data-target="#quickshop-modal"
+                                    data-modal-url="modal-fullscreen-quickshop"
+                                    title="Compra rápida de Taza Cafe 290cc c/Plato Arte Latte"
+                                    aria-label="Compra rápida de Taza Cafe 290cc c/Plato Arte Latte">Agregar al
+                                    carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="/modules/product/tetera-ceramica-retro.html" target="_self"><img class="img-fluid"
+                                src="/assets/images/teapot01tn.jpg" alt="Tetera Cerámica Retro"></a>
+                        <div class="" container-fluid>
+                            <a href="/modules/product/taza-cafe-250cc-c-tabla-de-madera.html"
+                                title="Tetera Cerámica Retro" class="h5" aria-label="Tetera Cerámica Retro"
+                                data-store="product-item-name-208355257">Tetera Cerámica Retro</a>
+                            <span>$4.999</span>
+                            <div class="">
+                                <a class="js-quickshop-modal-open js-fullscreen-modal-open btn btn-primary full-width font-small-xs"
+                                    data-toggle="modal" data-target="#quickshop-modal"
+                                    data-modal-url="modal-fullscreen-quickshop"
+                                    title="Compra rápida de Tetera Cerámica Retro"
+                                    aria-label="Compra rápida de Tetera Cerámica Retro">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <section></section>
+    </main>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/assets/js/main.js"></script>
 </body>
 
 </html>
