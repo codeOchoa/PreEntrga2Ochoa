@@ -11898,11 +11898,17 @@ body {
 }
 
 #container__item {
-  background: rgba(5, 81, 96, 0.3137254902);
+  background: #495057;
 }
 
 .h5 {
   text-decoration: none;
+}
+
+#img-footer {
+  height: 30px;
+  margin: 0px 5px 5px 0px;
+  width: 47px;
 }
 
 /*# sourceMappingURL=main.css.map */
