@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import "../assets/css/reset.css";
-@import "../assets/css/normalize.css";
+@import "./assets/css/reset.css";
+@import "./assets/css/normalize.css";
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.min.css";
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 /*!
@@ -11850,7 +11850,7 @@ textarea.form-control-lg {
 }
 @font-face {
   font-family: "Josefin Sans";
-  src: url("../assets/fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
+  src: url("./assets/fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
 }
 /* Variables para el modo claro */
 /* Fondo del cuerpo */
@@ -11895,6 +11895,12 @@ body {
   top: 0;
   z-index: 1020;
   transition: top 0.3s;
+}
+
+#img-footer {
+  height: 30px;
+  margin: 0px 5px 5px 0px;
+  width: 47px;
 }
 
 /*# sourceMappingURL=main.css.map */

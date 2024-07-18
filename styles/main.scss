@@ -1,12 +1,12 @@
-@import "../assets/css/reset.css";
-@import "../assets/css/normalize.css";
+@import "./assets/css/reset.css";
+@import "./assets/css/normalize.css";
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.min.css";
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 @font-face {
     font-family: "Josefin Sans";
-    src: url("../assets/fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
+    src: url("./assets/fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
 }
 
 /* Variables para el modo claro */
@@ -90,8 +90,8 @@ body {
 //     text-decoration: none;
 // }
 
-// #img-footer {
-//     height: 30px;
-//     margin: 0px 5px 5px 0px;
-//     width: 47px;
-// }
+#img-footer {
+    height: 30px;
+    margin: 0px 5px 5px 0px;
+    width: 47px;
+}
