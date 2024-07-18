@@ -1,7 +1,7 @@
 {
     "title": "Malec",
     "name": "malec-homepage",
-    "version": "0.0.1",
+    "version": "0.0.9",
     "scripts": {
         "build": "npm run clean && npm run build:scss && npm run build:scripts && npm run build:assets",
         "build:assets": "node scripts/build-assets.js",

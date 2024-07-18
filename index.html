@@ -26,10 +26,10 @@
                 <button class="navbar-toggler" type="button">
                     <i class="bi bi-search"></i>
                 </button>
-                <form class="d-flex mt-3" role="search">
+                <!-- <form class="d-flex mt-3" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                </form> -->
                 <!-- offcanvas -->
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
@@ -64,27 +64,44 @@
                 </div>
             </div>
         </nav>
-        <!-- Nav-bar -->
-        <nav id="nav-bar" class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Selecciona País</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Carrito</a>
-                    </li>
-                </ul>
+    </header>
+
+
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#!">Start Bootstrap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#!">All Products</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                                <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button class="btn btn-outline-dark" type="submit">
+                            <i class="bi-cart-fill me-1"></i>
+                            Cart
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        </button>
+                    </form>
+                </div>
             </div>
         </nav>
-    </header>
+
+
     <main>
         <article>
             <!-- Carousel -->
-            <div id="carouselExampleIndicators" class="carousel slide">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="50">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                         class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -97,16 +114,16 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="../assets/images/image01.jpg" class="d-block w-100" alt="Sample">
+                        <img src="./assets/images/carousel01.jpg" class="d-block w-100" alt="Sample">
                     </div>
                     <div class="carousel-item">
-                        <img src="../assets/images/image02.jpg" class="d-block w-100" alt="Sample">
+                        <img src="./assets/images/carousel02.jpg" class="d-block w-100" alt="Sample">
                     </div>
                     <div class="carousel-item">
-                        <img src="../assets/images/image03.jpg" class="d-block w-100" alt="Sample">
+                        <img src="./assets/images/carousel03.jpg" class="d-block w-100" alt="Sample">
                     </div>
                     <div class="carousel-item">
-                        <img src="../assets/images/image04.jpg" class="d-block w-100" alt="Sample">
+                        <img src="./assets/images/carousel04.jpg" class="d-block w-100" alt="Sample">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -188,7 +205,7 @@
                     <div class="col mb-5">
                         <div class="card h-100">
                             <a href="./modules/product/taza-290cc-plato-arte-latte.html" target="_self">
-                            <img class="card-img-top" src="./assets/images/coffee05tn.jpg" alt="Taza 290cc c/Plato Arte Latte"/></a>
+                            <img class="card-img-top" src="./assets/images/coffee11tn.jpg" alt="Taza 290cc c/Plato Arte Latte"/></a>
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <a class="text-decoration-none text-dark" href="./modules/product/taza-290cc-plato-arte-latte.html" title="Taza 290cc c/Plato Arte Latte" aria-label="Pocillo Expreso Porcelana Gastronómica">
@@ -211,45 +228,46 @@
                     <div class="col mb-5">
                         <div class="card h-100">
                             <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <a href="./modules/product/tetera-ceramica-retro.html" target="_self">
+                            <a href="./modules/product/tetera-ceramica-500cc-retro.html" target="_self">
                             <img class="card-img-top" src="./assets/images/teapot01tn.jpg" alt="Tetera Cerámica Retro"/></a>
                             <div class="card-body p-4">
                                 <div class="text-center">
-                                    <a class="text-decoration-none text-dark" href="./modules/product/tetera-ceramica-retro.html" title="Tetera Cerámica Retro" aria-label="Tetera Cerámica Retro">
+                                    <a class="text-decoration-none text-dark" href="./modules/product/tetera-ceramica-500cc-retro.html" title="Tetera Cerámica Retro" aria-label="Tetera Cerámica Retro">
                                     <h5 class="fw-bolder">Tetera cerámica 500cc retro</h5></a>
                                     <span class="text-muted text-decoration-line-through">$4.43</span>
                                     <span>$3.43</span>
                                 </div>
                             </div>
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./modules/product/tetera-ceramica-retro.html" title="Compra rápida de Tetera Cerámica Retro" aria-label="Compra rápida de Tetera Cerámica Retro">Agregar al carrito</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./modules/product/tetera-ceramica-500cc-retro.html" title="Compra rápida de Tetera Cerámica Retro" aria-label="Compra rápida de Tetera Cerámica Retro">Agregar al carrito</a></div>
                             </div>
                         </div>
                     </div>
                     <div class="col mb-5">
                         <div class="card h-100">
-                            <a href="./modules/product/taza-ceramica-cuchara.html" target="_self">
+                            <a href="./modules/product/taza-ceramica-350cc-cuchara.html" target="_self">
                             <img class="card-img-top" src="./assets/images/coffee06tn.jpg" alt="Taza Cerámica + Cuchara"/></a>
                             <div class="card-body p-4">
                                 <div class="text-center">
-                                    <a class="text-decoration-none text-dark" href="./modules/product/taza-ceramica-cuchara.html" title="Taza Cerámica + Cuchara" aria-label="Taza Cerámica + Cuchara">
-                                    <h5 class="fw-bolder">Taza cerámica + cuchara</h5></a>
+                                    <a class="text-decoration-none text-dark" href="./modules/product/taza-ceramica-350cc-cuchara.html" title="Taza Cerámica + Cuchara" aria-label="Taza Cerámica + Cuchara">
+                                    <h5 class="fw-bolder">Taza cerámica 350cc + cuchara</h5></a>
                                     <span>$7.21</span>
                                 </div>
                             </div>
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./modules/product/taza-ceramica-cuchara.html" title="Compra rápida de Taza Cerámica + Cuchara" aria-label="Compra rápida de Taza Cerámica + Cuchara">Agregar al carrito</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./modules/product/taza-ceramica-350cc-cuchara.html" title="Compra rápida de Taza Cerámica + Cuchara" aria-label="Compra rápida de Taza Cerámica + Cuchara">Agregar al carrito</a></div>
                             </div>
                         </div>
                     </div>
                     <div class="col mb-5">
                         <div class="card h-100">
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <img class="card-img-top" src="./assets/images/tea-cup02tn.jpg" alt="..."/>
+                            <a href="./modules/product/taza-de-te-230cc-plato-cuchara.html" target="_self">
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div></a>
+                            <img class="card-img-top" src="./assets/images/tea-cup02tn.jpg" alt="Taza de te 230cc + plato + cuchara"/>
                             <div class="card-body p-4">
                                 <div class="text-center">
-                                    <a class="text-decoration-none"text-dark href="./modules/product/p007.html"
-                                    <h5 class="fw-bolder">Taza de te 230cc + plato + cuchara</h5>
+                                    <a class="text-decoration-none text-dark" href="./modules/product/taza-de-te-230cc-plato-cuchara.html" title="Taza de te 230cc + plato + cuchara" aria-label="Taza de te 230cc + plato + cuchara">
+                                    <h5 class="fw-bolder">Taza de te 230cc + plato + cuchara</h5></a>
                                     <div class="d-flex justify-content-center small text-warning mb-2">
                                         <div class="bi-star-fill"></div>
                                         <div class="bi-star-fill"></div>
@@ -258,20 +276,22 @@
                                         <div class="bi-star-fill"></div>
                                     </div>
                                     <span class="text-muted text-decoration-line-through">$44.99</span>
-                                    $39.30
+                                    <span>$39.30</span>
                                 </div>
                             </div>
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./modules/product/taza-de-te-230cc-plato-cuchara.html" title="Compra rápida de Taza de te 230cc + plato + cuchara" aria-label="Compra rápida de Taza de te 230cc + plato + cuchara">Agregar al carrito</a></div>
                             </div>
                         </div>
                     </div>
                     <div class="col mb-5">
                         <div class="card h-100">
-                            <img class="card-img-top" src="./assets/images/coffee04tn.jpg" alt="..."/>
+                            <a href="./modules/product/taza-ceramica-350cc-gaspeada.html" target="_self">
+                            <img class="card-img-top" src="./assets/images/coffee04tn.jpg" alt="Taza cerámica 350cc gaspeada"/></a>
                             <div class="card-body p-4">
                                 <div class="text-center">
-                                    <h5 class="fw-bolder">Taza cerámica 350cc gaspeada</h5>
+                                    <a class="text-decoration-none text-dark" href="./modules/product/taza-ceramica-350cc-gaspeada.html" title="Taza cerámica 350cc gaspeada" aria-label="Taza cerámica 350cc gaspeada">
+                                    <h5 class="fw-bolder">Taza cerámica 350cc gaspeada</h5></a>
                                     <div class="d-flex justify-content-center small text-warning mb-2">
                                         <div class="bi-star-fill"></div>
                                         <div class="bi-star-fill"></div>
@@ -283,7 +303,7 @@
                                 </div>
                             </div>
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./modules/product/taza-ceramica-350cc-gaspeada.html" title="Compra rápida de Taza cerámica 350cc gaspeada" aria-label="Compra rápida de Taza cerámica 350cc gaspeada">Agregar al carrito</a></div>
                             </div>
                         </div>
                     </div>
@@ -295,7 +315,6 @@
         <div id="footer"></div>
     </footer>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 
