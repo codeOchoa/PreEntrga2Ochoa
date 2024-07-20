@@ -11889,17 +11889,29 @@ body {
   width: 64px;
 }
 
-#nav-bar {
-  position: sticky;
-  top: 0;
-  z-index: 1020;
-  transition: top 0.3s;
-}
-
 #img-footer {
   height: 30px;
   margin: 0px 5px 5px 0px;
   width: 47px;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#clearSearch {
+  background: none;
+  border: none;
+}
+
+.search-form {
+  display: none;
+}
+
+.sticky-top {
+  top: 0;
+  z-index: 1020;
 }
 
 /*# sourceMappingURL=main.css.map */

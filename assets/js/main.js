@@ -15,3 +15,12 @@ document.addEventListener('scroll', function () {
         .then(response => response.text())
         .then(data => document.getElementById("footer").innerHTML = data);
 });
+
+document.getElementById('toggleSearch').addEventListener('click', function () {
+  const searchForm = document.querySelector('.search-form');
+  searchForm.style.display = searchForm.style.display === 'none' || searchForm.style.display === '' ? 'flex' : 'none';
+});
+
+document.getElementById('clearSearch').addEventListener('click', function () {
+  document.querySelector('.search-form .form-control').value = '';
+});
