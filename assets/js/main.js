@@ -4,20 +4,20 @@ document.addEventListener('scroll', function () {
     var specificDivTop = specificDiv.getBoundingClientRect().top;
 
     if (specificDivTop <= 0) {
-      navBar.style.top = '-100px'; // Ajusta este valor según la altura de tu nav-bar
+      navBar.style.top = '-100px';
     } else {
       navBar.style.top = '0';
     }
   });
 
   document.addEventListener("DOMContentLoaded", function() {
-    fetch("/includes/nav.html")
+    fetch("../../includes/nav.html")
         .then(response => response.text())
         .then(data => document.getElementById("navbard").innerHTML = data);
 });
 
   document.addEventListener("DOMContentLoaded", function() {
-    fetch("/includes/footer.html")
+    fetch("../../includes/footer.html")
         .then(response => response.text())
         .then(data => document.getElementById("footer").innerHTML = data);
 });
