@@ -8,7 +8,7 @@
     <meta name="description" content="Tienda artesanal de cerámica y velas de soja.">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <!-- <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css"> -->
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="icon" href="./assets/images/logo.png">
     <title>Malec</title>
@@ -16,176 +16,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#!">Malec</a>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 d-none d-lg-flex">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Inicio</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#!">Ver todos los productos</a></li>
-                            <li>
-                                <hr class="dropdown-divider" />
-                            </li>
-                            <li><a class="dropdown-item" href="#!">Sale</a></li>
-                            <li>
-                                <hr class="dropdown-divider" />
-                            </li>
-                            <li><a class="dropdown-item" href="#!">Tazas</a></li>
-                            <li>
-                                <hr class="dropdown-divider" />
-                            </li>
-                            <li><a class="dropdown-item" href="#!">Accesorios</a></li>
-                            <li>
-                                <hr class="dropdown-divider" />
-                            </li>
-                            <li><a class="dropdown-item" href="#!">Colecciones</a></li>
-                            <li>
-                                <hr class="dropdown-divider" />
-                            </li>
-                            <li><a class="dropdown-item" href="#!">Gift card</a></li>
-                            <li>
-                                <hr class="dropdown-divider" />
-                            </li>
-                            <li><a class="dropdown-item" href="#!">Ofertas</a></li>
-                            <li>
-                                <hr class="dropdown-divider" />
-                            </li>
-                            <li><a class="dropdown-item" href="#!">Preventa</a></li>
-                            <li>
-                                <hr class="dropdown-divider" />
-                            </li>
-                            <li><a class="dropdown-item" href="#!">Envio gratis</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#!">¿Quienes somos?</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ayuda</a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#!">Localizar mi prodcuto</a></li>
-                            <li>
-                                <hr class="dropdown-divider" />
-                            </li>
-                            <li><a class="dropdown-item" href="#!">Cambio de artículos</a></li>
-                            <li>
-                                <hr class="dropdown-divider" />
-                            </li>
-                            <li><a class="dropdown-item" href="#!">Preguntas frecuentes</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <div class="ms-auto d-flex align-items-center">
-                    <form class="d-flex me-3 mb-0 mb-lg-0 ms-lg-0" role="search">
-                        <button class="btn btn-outline-dark me-0 d-none d-lg-inline-block" type="button" id="toggleSearch" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" aria-expanded="false">
-                            <i class="bi bi-search me-1"></i>
-                        </button>
-                    </form>
-                    <form class="d-flex me-0 mb-0 mb-lg-0 ms-lg-0">
-                        <button class="btn btn-outline-dark me-0 d-none d-lg-inline-block" type="submit">
-                            <i class="bi-cart-fill me-0"></i>
-                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-                        </button>
-                    </form>
-                    <button class="btn btn-outline-dark d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-                        <i class="bi bi-list" id="offcanvasWithBothOptionsLabel"></i>
-                    </button>
-                    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-                        <div class="offcanvas-header">
-                        <form class="d-flex search-form" id="offcanvasWithBothOptionsLabel">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        </form>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 d-lg-none d-lg-flex">
-                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Inicio</a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#!">Ver todos los productos</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider" />
-                                    </li>
-                                    <li><a class="dropdown-item" href="#!">Sale</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider" />
-                                    </li>
-                                    <li><a class="dropdown-item" href="#!">Tazas</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider" />
-                                    </li>
-                                    <li><a class="dropdown-item" href="#!">Accesorios</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider" />
-                                    </li>
-                                    <li><a class="dropdown-item" href="#!">Colecciones</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider" />
-                                    </li>
-                                    <li><a class="dropdown-item" href="#!">Gift card</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider" />
-                                    </li>
-                                    <li><a class="dropdown-item" href="#!">Ofertas</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider" />
-                                    </li>
-                                    <li><a class="dropdown-item" href="#!">Preventa</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider" />
-                                    </li>
-                                    <li><a class="dropdown-item" href="#!">Envio gratis</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="#!">¿Quienes somos?</a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ayuda</a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#!">Localizar mi prodcuto</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider" />
-                                    </li>
-                                    <li><a class="dropdown-item" href="#!">Cambio de artículos</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider" />
-                                    </li>
-                                    <li><a class="dropdown-item" href="#!">Preguntas frecuentes</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-
-
-                        <!-- <button class="btn btn-outline-dark d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-                            <i class="bi bi-list" id="offcanvasWithBothOptionsLabel"></i>
-                        </button>
-                        <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-                            <div class="offcanvas-header">
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body"> -->
-
-
-
-                        <!-- <form class="d-flex me-3 mb-0 mb-lg-0 ms-lg-0" role="search">
-                            <button class="btn btn-outline-dark mb-2 me-0 d-lg-none" type="button" id="toggleSearch" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" aria-expanded="false">
-                                <i class="bi bi-search me-1"></i>
-                            </button>
-                        </form> -->
-                        <form class="d-flex me-3 mb-0 mb-lg-0 ms-lg-0">
-                            <button class="btn btn-outline-dark me-0 d-lg-none" type="submit">
-                                <i class="bi-cart-fill me-1"></i>
-                                Cart
-                                <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-                            </button>
-                        </form>
-                      </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
+        <div id="navbard"></div>
     </header>
     <main>
         <article>
@@ -230,7 +61,7 @@
             <h4 class="h4 px-4 px-lg-5 mt-5">Productos destacados</h4>
             <div class="container px-4 px-lg-5 mt-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                    <div class="col mb-5">
+                    <div class="col me-3 mb-5 ms-3 p-0 shadow-box">
                         <div class="card h-100">
                             <a href="./modules/product/taza-250cc-tabla-de-madera.html" target="_self">
                                 <img class="card-img-top" src="./assets/images/table01tn.jpg"
@@ -254,7 +85,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-5">
+                    <div class="col me-3 mb-5 ms-3 p-0 shadow-box">
                         <div class="card h-100">
                             <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
                                 Sale</div>
@@ -287,7 +118,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-5">
+                    <div class="col me-3 mb-5 ms-3 p-0 shadow-box">
                         <div class="card h-100">
                             <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
                                 Sale</div>
@@ -316,7 +147,7 @@
                                 </div>
                         </div>
                     </div>
-                    <div class="col mb-5">
+                    <div class="col me-3 mb-5 ms-3 p-0 shadow-box">
                         <div class="card h-100">
                             <a href="./modules/product/taza-290cc-plato-arte-latte.html" target="_self">
                                 <img class="card-img-top" src="./assets/images/coffee11tn.jpg"
@@ -348,7 +179,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-5">
+                    <div class="col me-3 mb-5 ms-3 p-0 shadow-box">
                         <div class="card h-100">
                             <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
                                 Sale</div>
@@ -370,11 +201,12 @@
                                 <div class="text-center"><a class="btn btn-outline-dark mt-auto"
                                         href="./modules/product/tetera-ceramica-500cc-retro.html"
                                         title="Compra rápida de Tetera Cerámica Retro"
-                                        aria-label="Compra rápida de Tetera Cerámica Retro">Agregar al carrito</a></div>
+                                        aria-label="Compra rápida de Tetera Cerámica Retro">Agregar al carrito</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-5">
+                    <div class="col me-3 mb-5 ms-3 p-0 shadow-box">
                         <div class="card h-100">
                             <a href="./modules/product/taza-ceramica-350cc-cuchara.html" target="_self">
                                 <img class="card-img-top" src="./assets/images/coffee06tn.jpg"
@@ -398,7 +230,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-5">
+                    <div class="col me-3 mb-5 ms-3 p-0 shadow-box">
                         <div class="card h-100">
                             <a href="./modules/product/taza-de-te-230cc-plato-cuchara.html" target="_self">
                                 <div class="badge bg-dark text-white position-absolute"
@@ -434,7 +266,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-5">
+                    <div class="col me-3 mb-5 ms-3 p-0 shadow-box">
                         <div class="card h-100">
                             <a href="./modules/product/taza-ceramica-350cc-gaspeada.html" target="_self">
                                 <img class="card-img-top" src="./assets/images/coffee04tn.jpg"

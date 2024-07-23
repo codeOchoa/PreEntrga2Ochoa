@@ -1,12 +1,12 @@
 @charset "UTF-8";
-@import "./assets/css/reset.css";
-@import "./assets/css/normalize.css";
+@import "./reset.css";
+@import "./normalize.css";
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import "../node_modules/bootstrap-icons/font/bootstrap-icons.min.css";
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css";
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -11849,7 +11849,7 @@ textarea.form-control-lg {
 }
 @font-face {
   font-family: "Josefin Sans";
-  src: url("../assets/fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
+  src: url("../fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
 }
 /* Variables para el modo claro */
 /* Fondo del cuerpo */
@@ -11884,17 +11884,6 @@ body {
   transition: background-color 0.5s, color 0.5s;
 }
 
-#logoMalec {
-  height: auto;
-  width: 64px;
-}
-
-#img-footer {
-  height: 30px;
-  margin: 0px 5px 5px 0px;
-  width: 47px;
-}
-
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: bold;
@@ -11913,6 +11902,29 @@ body {
   position: sticky;
   top: 0;
   z-index: 1020;
+}
+
+.card-body2 {
+  color: var(--bs-card-color);
+  flex: 1 1 auto;
+  margin: 0 0.5rem 0 0;
+  padding: 0rem 0rem;
+}
+
+.shadow-box {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.shadow-box:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#img-footer {
+  height: 30px;
+  margin: 0px 5px 5px 0px;
+  width: 47px;
 }
 
 /*# sourceMappingURL=main.css.map */
