@@ -4,13 +4,9 @@
     "version": "0.0.9",
     "scripts": {
         "build": "npm run clean && npm run build:scss && npm run build:scripts && npm run build:assets",
-        "build:assets": "node scripts/build-assets.js",
         "build-css": "sass styles/main.scss assets/css/main.css",
-        "build:scripts": "node scripts/build-scripts.js",
-        "build:scss": "node scripts/build-scss.js",
         "clean": "node scripts/clean.js",
         "start": "npm run build && node scripts/start.js",
-        "start:debug": "npm run build && node scripts/start-debug.js",
         "watch-css": "sass --watch styles/main.scss:assets/css/main.css"
     },
     "description": "A shop homepage HTML template built with Bootstrap",

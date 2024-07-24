@@ -11,13 +11,13 @@ document.addEventListener('scroll', function () {
   });
 
   document.addEventListener("DOMContentLoaded", function() {
-    fetch("../../includes/nav.html")
+    fetch("./includes/nav.html")
         .then(response => response.text())
         .then(data => document.getElementById("navbard").innerHTML = data);
 });
 
   document.addEventListener("DOMContentLoaded", function() {
-    fetch("../../includes/footer.html")
+    fetch("./includes/footer.html")
         .then(response => response.text())
         .then(data => document.getElementById("footer").innerHTML = data);
 });
