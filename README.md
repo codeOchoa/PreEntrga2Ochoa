@@ -1,5 +1,5 @@
-![malec](./assets/icons/logo.svg)
+![malec](./assets/images/logo.png)
 
-# **malec**<br>
+# **Malec**<br>
 
-malec es una empresa...<br>
+Tienda online de ceramica<br>
