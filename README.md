@@ -1,4 +1,4 @@
-![malec](./assets/images/logo.png)
+![malec](./assets/images/#.png)
 
 # **Malec**<br>
 
