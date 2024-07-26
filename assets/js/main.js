@@ -1,4 +1,4 @@
-import "./root.js";
+// import "./root.js";
 // import AOS from "aos";
 // import "../../node_modules/aos/dist/aos.css";
 
