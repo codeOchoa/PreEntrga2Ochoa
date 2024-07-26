@@ -1,28 +1,35 @@
+import "./root.js";
+// import AOS from "aos";
+// import "../../node_modules/aos/dist/aos.css";
+
 // const projectRoot = window.CSS.camelCase($project - root)
 
-document.addEventListener('scroll', function () {
-    var navBar = document.getElementById('nav-bar');
-    var specificDiv = document.getElementById('specific-div');
-    var specificDivTop = specificDiv.getBoundingClientRect().top;
+// AOS.init();
 
-    if (specificDivTop <= 0) {
-        navBar.style.top = '-100px';
-    } else {
-        navBar.style.top = '0';
-    }
-});
+// You can also pass an optional settings object
+// below listed default settings
+// AOS.init({
+  // Global settings:
+//   disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+//   startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+//   initClassName: 'aos-init', // class applied after initialization
+//   animatedClassName: 'aos-animate', // class applied on animation
+//   useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+//   disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+//   debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+//   throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
 
-document.addEventListener("DOMContentLoaded", function () {
-    fetch("/includes/nav.html")
-        .then(response => response.text())
-        .then(data => document.getElementById("navbard").innerHTML = data);
-});
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+//   offset: 120, // offset (in px) from the original trigger point
+//   delay: 0, // values from 0 to 3000, with step 50ms
+//   duration: 400, // values from 0 to 3000, with step 50ms
+//   easing: 'ease', // default easing for AOS animations
+//   once: false, // whether animation should happen only once - while scrolling down
+//   mirror: false, // whether elements should animate out while scrolling past them
+//   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
-document.addEventListener("DOMContentLoaded", function () {
-    fetch("/includes/footer.html")
-        .then(response => response.text())
-        .then(data => document.getElementById("footer").innerHTML = data);
-});
+// });
 
 document.getElementById('toggleSearch').addEventListener('click', function () {
     const searchForm = document.querySelector('.search-form');
@@ -32,48 +39,3 @@ document.getElementById('toggleSearch').addEventListener('click', function () {
 document.getElementById('clearSearch').addEventListener('click', function () {
     document.querySelector('.search-form .form-control').value = '';
 });
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     // Obtener el número de carpetas que sube desde la página actual a la raíz
-//     var pathDepth = window.location.pathname.split('/').length - 2; // -2 para contar correctamente desde la raíz
-//     var relativePath = '';
-
-//     // Construir la ruta relativa basada en la profundidad de la ruta actual
-//     for (var i = 0; i < pathDepth; i++) {
-//         relativePath += '../';
-//     }
-
-//     // Ruta completa para nav.html
-//     var navPath = relativePath + 'includes/nav.html';
-
-//     fetch(navPath)
-//         .then(response => {
-//             if (!response.ok) {
-//                 throw new Error('Network response was not ok');
-//             }
-//             return response.text();
-//         })
-//         .then(data => document.getElementById("navbard").innerHTML = data)
-//         .catch(error => console.error('There was a problem with the fetch operation:', error));
-// });
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     fetch("/includes/nav.html")
-//         .then(response => {
-//             if (!response.ok) {
-//                 throw new Error('Network response was not ok');
-//             }
-//             return response.text();
-//         })
-//         .then(data => {
-//             const navbar = document.getElementById("navbard");
-//             if (navbar) {
-//                 navbar.innerHTML = data;
-//             } else {
-//                 console.error('Element with id "navbard" not found');
-//             }
-//         })
-//         .catch(error => {
-//             console.error('Fetch error:', error);
-//         });
-// });

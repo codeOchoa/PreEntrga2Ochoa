@@ -33,6 +33,7 @@
         "url": "https://github.com/codeOchoa/PreEntrga2Ochoa"
     },
     "dependencies": {
+        "aos": "^3.0.0-beta.6",
         "bootstrap": "^5.3.3",
         "bootstrap-icons": "^1.11.3"
     },
