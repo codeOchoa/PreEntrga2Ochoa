@@ -1,13 +1,15 @@
 {
     "title": "Malec",
-    "name": "malec-homepage",
-    "version": "0.0.9",
+    "name": "malec",
+    "version": "0.1.0",
+    "private": false,
     "scripts": {
-        "build": "npm run clean && npm run build:scss && npm run build:scripts && npm run build:assets",
-        "build-css": "sass styles/main.scss assets/css/main.css",
-        "clean": "node scripts/clean.js",
-        "start": "npm run build && node scripts/start.js",
-        "watch-css": "sass --watch styles/main.scss:assets/css/main.css"
+        "build-css": "sass src/assets/scss/main.scss src/assets/css/main.css",
+        "watch-css": "sass --watch src/assets/scss/main.scss:src/assets/css/main.css",
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
     },
     "description": "A shop homepage HTML template built with Bootstrap",
     "keywords": [
@@ -33,11 +35,22 @@
         "url": "https://github.com/codeOchoa/PreEntrga2Ochoa"
     },
     "dependencies": {
-        "aos": "^3.0.0-beta.6",
+        "aos": "^2.3.4",
         "bootstrap": "^5.3.3",
-        "bootstrap-icons": "^1.11.3"
+        "bootstrap-icons": "^1.11.3",
+        "next": "14.2.5",
+        "react": "^18",
+        "react-dom": "^18",
+        "sass": "^1.77.8"
     },
     "devDependencies": {
-        "sass": "^1.77.8"
+        "@types/node": "^20",
+        "@types/react": "^18",
+        "@types/react-dom": "^18",
+        "eslint": "^8",
+        "eslint-config-next": "14.2.5",
+        "postcss": "^8",
+        "tailwindcss": "^3.4.1",
+        "typescript": "^5"
     }
 }
